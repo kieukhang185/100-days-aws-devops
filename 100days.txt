@@ -1,0 +1,200 @@
+Day 001 — Set Up AWS CLI, Profiles, and MFA
+
+Day 002 — Create a Least-Privilege IAM User and Groups
+
+Day 003 — Configure AWS Budgets and Cost Alerts
+
+Day 004 — Tagging Strategy for Cost Allocation
+
+Day 005 — S3 Basics: Buckets, Versioning, and Lifecycle Rules
+
+Day 006 — EC2 Basics: Launch, Secure, and SSH with Session Manager
+
+Day 007 — VPC Fundamentals: Subnets, Route Tables, and IGW
+
+Day 008 — Security Groups vs NACLs: Traffic Controls
+
+Day 009 — CloudWatch Logs, Metrics, and Dashboards 101
+
+Day 010 — Intro to Terraform: Providers, Resources, Variables
+
+Day 011 — Terraform State: Remote S3 + DynamoDB Locking
+
+Day 012 — Terraform Modules: Build and Consume a Reusable Module
+
+Day 013 — Terraform Quality: fmt, validate, tflint, and terragrunt basics
+
+Day 014 — GitHub Actions CI: Lint and Test a Terraform Project
+
+Day 015 — Authenticate GitHub to AWS with OIDC (No Static Keys)
+
+Day 016 — Secret Scanning in CI: gitleaks / trufflehog
+
+Day 017 — Bash Automation: Idempotent Provision/Destroy Scripts
+
+Day 018 — Python Automation: boto3 Task Script with Retries
+
+Day 019 — CloudTrail Setup and S3 Log Archival
+
+Day 020 — AWS Config Rules and Conformance Packs Intro
+
+Day 021 — Build a Docker Image and Run Locally
+
+Day 022 — Push Images to Amazon ECR with CI
+
+Day 023 — ECS on Fargate: Single Service Behind an ALB
+
+Day 024 — ECS Autoscaling Policies (CPU/Memory/Request)
+
+Day 025 — Blue/Green Deployments for ECS with CodeDeploy
+
+Day 026 — Zero-Downtime App Config with Parameter Store
+
+Day 027 — Secrets Management with AWS Secrets Manager
+
+Day 028 — ALB vs NLB: When and How to Use Each
+
+Day 029 — Route 53: Weighted and Failover Routing
+
+Day 030 — CloudFront CDN with S3 Origin and OAC
+
+Day 031 — WAF Basics: Blocklists, Rate Limits, and Managed Rules
+
+Day 032 — IAM Policies: Boundary, SCP, and Permission Guardrails
+
+Day 033 — KMS CMKs: Key Policies and Encryption at Rest
+
+Day 034 — VPC Endpoints (Gateway/Interface) for Private Access
+
+Day 035 — NAT Gateway Cost Optimization Patterns
+
+Day 036 — EventBridge: Pub/Sub for Decoupled Services
+
+Day 037 — SQS Queues with Dead-Letter Queues and Redrives
+
+Day 038 — SNS Fan-Out and Retries with Lambda Subscribers
+
+Day 039 — Serverless: Lambda + API Gateway Terraform Stack
+
+Day 040 — Step Functions: Orchestrate a Simple Workflow
+
+Day 041 — Observability: Structured Logging and Correlation IDs
+
+Day 042 — Distributed Tracing with AWS X-Ray
+
+Day 043 — Metrics and Alarms for SLOs (Latency, Error Rate)
+
+Day 044 — Centralized Log Ingestion with CloudWatch Subscriptions
+
+Day 045 — OpenSearch for Log Analytics (Dev-Scale)
+
+Day 046 — AMI Baking with Packer and Golden Image Pipeline
+
+Day 047 — Auto Scaling Groups with Launch Templates
+
+Day 048 — Blue/Green for EC2 with CodeDeploy
+
+Day 049 — Immutable Infrastructure Pipeline (Plan → Apply → Verify)
+
+Day 050 — Infracost: Cost Estimates in Pull Requests
+
+Day 051 — RDS Basics: Minimal Dev Instance with Backups
+
+Day 052 — AWS Backup: Policies and Vaults for EBS/RDS
+
+Day 053 — Disaster Recovery: S3 Cross-Region Replication Drill
+
+Day 054 — Health Checks and Multi-AZ Failover Patterns
+
+Day 055 — Fault Injection Simulator: Chaos Experiments 101
+
+Day 056 — SSM Automation: Runbooks for Common Incidents
+
+Day 057 — Hardened Access: Session Manager, No Public SSH
+
+Day 058 — Inspector and Security Hub Findings Triage
+
+Day 059 — GuardDuty Alerts and Automated Containment
+
+Day 060 — Incident Response: Cold, Warm, and Pilot-Light DR
+
+Day 061 — EKS Cluster with Terraform (Managed Node Groups)
+
+Day 062 — EKS IAM Roles for Service Accounts (IRSA)
+
+Day 063 — EKS Networking: CNI, Security Groups for Pods
+
+Day 064 — EKS Ingress with AWS Load Balancer Controller
+
+Day 065 — Helm Basics: Package and Deploy Charts
+
+Day 066 — GitOps with Argo CD: App of Apps Pattern
+
+Day 067 — EKS Storage: EBS/EFS CSI Drivers
+
+Day 068 — Horizontal Pod Autoscaler and Cluster Autoscaler
+
+Day 069 — Managed Prometheus & Grafana for EKS Metrics
+
+Day 070 — Fluent Bit to CloudWatch/OpenSearch from EKS
+
+Day 071 — Canary Releases with Service Mesh (App Mesh Intro)
+
+Day 072 — Progressive Delivery with Argo Rollouts
+
+Day 073 — Feature Flags and Safe Rollbacks
+
+Day 074 — Multi-Stage Pipelines with Manual Approvals
+
+Day 075 — Environment Promotion: Dev → Staging → Prod
+
+Day 076 — Policy as Code: OPA/Conftest for Terraform
+
+Day 077 — Checkov/Snyk IaC Scans in CI
+
+Day 078 — Pre-Commit Hooks for Terraform and Python
+
+Day 079 — Build a Reusable Terraform VPC Module
+
+Day 080 — Private ECR, Cross-Account Pull with Policies
+
+Day 081 — AWS Organizations: OUs and SCP Guardrails
+
+Day 082 — Identity Center (SSO) with Permission Sets
+
+Day 083 — Multi-Account CI: OIDC to Assume Cross-Account Roles
+
+Day 084 — Centralized CloudTrail and Config Across Accounts
+
+Day 085 — Landing Zone Patterns and Account Vending Basics
+
+Day 086 — Centralized Logging and SIEM Ingestion Patterns
+
+Day 087 — Network Hub-and-Spoke with Transit Gateway
+
+Day 088 — PrivateLink for Producer/Consumer Services
+
+Day 089 — Multi-Region Active/Passive Architecture
+
+Day 090 — Data Lifecycle: Glacier, Intelligent-Tiering, and OLM
+
+Day 091 — API Gateway Canary + WAF + Rate Limiting
+
+Day 092 — CloudFront Functions vs Lambda@Edge Use Cases
+
+Day 093 — Step Functions Express vs Standard Tradeoffs
+
+Day 094 — Event-Driven Batch with ECS RunTask
+
+Day 095 — Blue/Green for Lambda with Traffic Shifting
+
+Day 096 — Advanced Cost Guardrails: Budgets Actions & Anomaly Detection
+
+Day 097 — Reliability Tests: Regional Failover Simulation
+
+Day 098 — Performance Tests with Locust/Gatling in CI
+
+Day 099 — Production Readiness Checklist and Runbooks
+
+Day 100 — Capstone: Multi-Account, GitOps-Driven, Observability-Rich Platform on AWS
+
