@@ -1,6 +1,6 @@
 # 100 Days of DevOps on AWS
 
-![progress](https://img.shields.io/badge/progress-1%2F100-blue)
+![progress](https://img.shields.io/badge/progress-2%2F100-blue)
 
 A public, versioned portfolio of 100 days of hands‑on DevOps on AWS. Each day is self‑contained and reproducible.
 
@@ -69,8 +69,8 @@ make tf-validate   # validate terraform for all dirs
 See `docs/guides/oidc-to-aws.md` for how to enable deployments without long‑lived keys.
 
 ## Progress Tracker (check off as you go)
-- [ ] Day 001 — AWS CLI, Profiles, and MFA
-- [ ] Day 002 — Least‑Privilege IAM User and Groups
+- [x] Day 001 — AWS CLI, Profiles, and MFA
+- [x] Day 002 — Least‑Privilege IAM User and Groups
 - [ ] Day 003 — Budgets and Cost Alerts
 - [ ] Day 004 — Tagging Strategy
 - [ ] Day 005 — S3 Basics
