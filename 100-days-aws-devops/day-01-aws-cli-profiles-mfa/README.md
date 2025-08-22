@@ -12,6 +12,9 @@
 # 1) Install AWS CLI v2 (macOS via brew; see AWS docs for other OSes)
 brew install awscli || true
 
+#Ubuntu/Debian
+sudo snap install aws-cli --classic
+
 # 2) Configure a profile
 aws configure --profile dev-100days
 
@@ -33,14 +36,16 @@ if command -v jq >/dev/null 2>&1; then
 fi
 
 # 5) Verify
-../../tools/scripts/verify_aws.sh dev-100days-mfa
+```bash
+bash tools/scripts/verify_aws.sh dev-100days-mfa
 ```
 
 ## Verification
-- `aws sts get-caller-identity` returns your account/user info using the MFA-backed profile.
+- `aws sts get-caller-identity --profile dev-100days-mfa` returns your account/user info using the MFA-backed profile.
 
 ## Teardown
 - Remove temporary session credentials from the `dev-100days-mfa` profile when done.
+
 
 ## Cost Notes
 - No AWS resources created; $0.

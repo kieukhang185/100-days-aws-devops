@@ -1,6 +1,6 @@
 # 100 Days of DevOps on AWS
 
-![progress](https://img.shields.io/badge/progress-0%2F100-blue)
+![progress](https://img.shields.io/badge/progress-1%2F100-blue)
 
 A public, versioned portfolio of 100 days of hands‑on DevOps on AWS. Each day is self‑contained and reproducible.
 
@@ -16,6 +16,9 @@ A public, versioned portfolio of 100 days of hands‑on DevOps on AWS. Each day 
 ## Repository Layout
 ```
 aws-devops-100-days/
+├─ aws-devops-100-days/
+|  ├─ day-001-aws-cli-profiles-mfa/
+|  └─ README.md
 ├─ README.md
 ├─ LICENSE
 ├─ .gitignore
@@ -36,8 +39,6 @@ aws-devops-100-days/
 ├─ tools/
 │  ├─ scripts/verify_aws.sh
 │  └─ modules/              # (optional in future days)
-└─ day-001-aws-cli-profiles-mfa/
-   └─ README.md
 ```
 
 ## How to use this repo
