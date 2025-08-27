@@ -27,8 +27,8 @@ install_with_apt(){
 
 for tool in $TOOLS; do
     case "$tool" in
-        aws)
-            install_with_snap aws
+        aws-cli)
+            install_with_snap aws-cli
             ;;
         terraform)
             install_with_snap terraform

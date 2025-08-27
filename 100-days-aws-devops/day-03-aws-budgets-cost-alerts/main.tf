@@ -9,11 +9,6 @@ terraform {
   required_version = ">= 1.12"
 }
 
-provider "aws" {
-  region  = var.region
-  profile = var.aws_profile
-}
-
 variable "region" {
   type    = string
   default = "us-east-1"
@@ -24,6 +19,13 @@ variable "aws_profile" {
   default     = "dev-100days-mfa"
   description = "The AWS profile to use for authentication"
 }
+
+
+provider "aws" {
+  region  = var.region
+  profile = var.aws_profile
+}
+
 
 variable "alert_email" {
   type = string
