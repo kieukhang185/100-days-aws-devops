@@ -24,4 +24,3 @@ tf-validate: tf-init
 		echo "terraform validate ($$d)"; \
 		terraform -chdir=$$d validate -no-color; \
 	done
-

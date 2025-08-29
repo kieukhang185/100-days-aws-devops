@@ -27,29 +27,29 @@ resource "aws_s3_bucket" "example" {
 }
 
 resource "aws_s3_bucket_versioning" "demo_versioning" {
-    bucket = aws_s3_bucket.example.id
+  bucket = aws_s3_bucket.example.id
 
-    versioning_configuration {
-        status = "Enabled"
-    }
+  versioning_configuration {
+    status = "Enabled"
+  }
 }
 
 resource "aws_s3_bucket_lifecycle_configuration" "demo_lifecycle" {
-    bucket = aws_s3_bucket.example.id
+  bucket = aws_s3_bucket.example.id
 
-    rule {
-        id      = "lifecycle"
-        status  = "Enabled"
+  rule {
+    id     = "lifecycle"
+    status = "Enabled"
 
-        noncurrent_version_transition {
-            noncurrent_days = 30
-            storage_class   = "STANDARD_IA"
-        }
-
-        expiration {
-            days = 365
-        }
+    noncurrent_version_transition {
+      noncurrent_days = 30
+      storage_class   = "STANDARD_IA"
     }
+
+    expiration {
+      days = 365
+    }
+  }
 }
 
 resource "random_id" "rand" {

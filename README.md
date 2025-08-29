@@ -76,4 +76,3 @@ See `docs/guides/oidc-to-aws.md` for how to enable deployments without long‑li
 - [ ] Day 005 — S3 Basics
 - [ ] ...
 - [ ] Day 100 — Capstone
-

@@ -54,4 +54,3 @@ bash tools/scripts/verify_aws.sh dev-100days-mfa
 - Prefer short‑lived credentials with MFA.
 - Name your profiles clearly (e.g., `dev-100days`, `prod-foo`).
 - Consider using SSO/Identity Center later for passwordless login.
-

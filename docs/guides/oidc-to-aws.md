@@ -9,4 +9,3 @@ High level steps:
 5. Remove any long‑lived AWS keys from GitHub Secrets.
 
 > This repo keeps CI "plan/validate" only by default; deploys (if any) should require manual approval and target ephemeral/sandbox accounts.
-
