@@ -55,6 +55,7 @@ resource "aws_subnet" "public" {
   }
 }
 
+
 resource "aws_security_group" "web_sg" {
   name        = "day008-web-sg"
   description = "Allow HTTP and SSH traffic"
@@ -95,6 +96,54 @@ resource "aws_security_group" "web_sg" {
     Day         = "008"
     Environment = "dev"
   }
+}
+
+resource "aws_network_acl" "public_nacl" {
+  vpc_id = aws_vpc.main.id
+
+  ingress {
+    protocol   = "tcp"
+    rule_no    = 100
+    action     = "allow"
+    cidr_block = "0.0.0.0/0"
+    from_port  = 80
+    to_port    = 80
+  }
+
+  ingress {
+    protocol   = "tcp"
+    rule_no    = 110
+    action     = "allow"
+    cidr_block = "0.0.0.0/0"
+    from_port  = 443
+    to_port    = 443
+  }
+
+  ingress {
+    protocol   = "tcp"
+    rule_no    = 120
+    action     = "allow"
+    cidr_block = "0.0.0.0/0"
+    from_port  = 22
+    to_port    = 22
+  }
+
+  egress {
+    protocol   = "tcp"
+    rule_no    = 100
+    action     = "allow"
+    cidr_block = "0.0.0.0/0"
+    from_port  = 1024
+    to_port    = 65535
+  }
+  subnet_ids = [aws_subnet.public.id]
+
+  tags = {
+    Project     = "aws-devops-100-days"
+    Day         = "008"
+    Environment = "dev"
+  }
+
 }
 
 resource "aws_instance" "web_server" {
