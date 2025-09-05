@@ -1,4 +1,4 @@
-.PHONY: lint tf-init tf-fmt tf-validate
+.PHONY: lint tf-init tf-fmt tf-validate clean
 
 lint:
 	@echo "Running ruff and shellcheck..."
@@ -24,3 +24,9 @@ tf-validate: tf-init
 		echo "terraform validate ($$d)"; \
 		terraform -chdir=$$d validate -no-color; \
 	done
+
+clean:
+	@echo "Cleaning up .terraform directories..."
+	@find . -type d -name ".terraform" -exec rm -rf {} +
+	@find . -type f -name ".terraform"* -exec rm -f {} +
+	@echo "Cleanup complete."
